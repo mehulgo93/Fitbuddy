@@ -24,7 +24,7 @@ class Workout:
     
     def add_exercises(self, exercise, sets= 1, repetitions= 1):
         EXERCISE_IS_IN_LIST = any(item["exercise"] == exercise for item in self.exercises)
-        if EXERCISE_IS_IN_LIST:
+        if not EXERCISE_IS_IN_LIST:
             self.exercises.append({"exercise": exercise, "sets": sets, "repetitions": repetitions})
     
 
