@@ -32,6 +32,8 @@ class Nutrition:
         CALORIES_IS_AN_INT = type(value) == int
         if CALORIES_IS_AN_INT:
             self._calories = value
+        else:
+            raise ValueError("Calories must be an integer")
     
 
     @property
@@ -40,9 +42,11 @@ class Nutrition:
     
     @protein.setter
     def protein(self, value):
-        PROTEIN_IS_AN_INT = type(value) == str
+        PROTEIN_IS_AN_INT = type(value) == int
         if PROTEIN_IS_AN_INT:
             self._protein = value
+        else:
+                raise ValueError("Protein must be an integer")
     
     @property
     def carbs(self):
@@ -53,16 +57,20 @@ class Nutrition:
         CARBS_IS_AN_INT = type(value) == int
         if CARBS_IS_AN_INT:
             self._carbs = value
+        else:
+            raise ValueError("Carbs must be an integer")
     
     @property
     def fat(self):
-        return self.__fat
+        return self._fat
     
     @fat.setter
     def fat(self, value):
         FAT_IS_AN_INT = type(value) == int
         if FAT_IS_AN_INT:
             self._fat = value
+        else:
+            raise ValueError("Fat must be an integer")
     
     
         
