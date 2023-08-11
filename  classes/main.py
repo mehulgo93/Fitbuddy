@@ -1,39 +1,50 @@
-from user import User
-from exercise import Exercise
-from workout import Workout
-from nutrition import Nutrition
-from sleeplog import SleepLog
-from goal import Goal
-from activityTracker import ActivityTracker
-from userSettings import UserSettings
-from visualization import Visualization
-from interface import FitnessAppGUI
-
+from classes.user import User
+from classes.exercise import Exercise
+from classes.workout import Workout
+from classes.nutrition import Nutrition
+from classes.sleeplog import SleepLog
+from classes.visualization import Visualization
 
 def main():
-    # Create instances of various classes
-    user = User(name="Alice", age=25, height_cm=160, weight_lb=55)
-    exercise = Exercise(name="Running", exercise_type="Cardio", duration_minutes=30, intensity=7)
-    workout = Workout(user=user, date="2023-08-01")
-    nutrition = Nutrition(user=user, date="2023-08-01", calories=300, protein=20, carbs=40, fat=10)
-    sleep_log = SleepLog(user=user, date="2023-08-01", hours_slept=7, sleep_quality="Good")
-    goal = Goal(user=user, description="Lose weight", target_value=5, unit="kg")
-    activity_tracker = ActivityTracker(user=user)
-    user_settings = UserSettings(user=user)
+    print("Welcome to FitBuddy Fitness Tracker App!")
+
+    # Create a user
+    name = input("Enter your name: ")
+    age = int(input("Enter your age: "))
+    weight_lb = float(input("Enter your weight (lbs): "))
+    height_cm = float(input("Enter your height (cm): "))
+    user = User(name, age, weight_lb, height_cm)
+
+    # Log exercise
+    print("\nLog an exercise:")
+    exercise_name = input("Enter exercise name: ")
+    exercise_type = input("Enter exercise type: ")
+    duration_minutes = int(input("Enter duration (minutes): "))
+    intensity = input("Enter intensity: ")
+    exercise = Exercise(exercise_name, exercise_type, duration_minutes, intensity)
+
+    # Create a workout
+    workout_date = input("\nEnter workout date (YYYY-MM-DD): ")
+    workout = Workout(workout_date, user)
+    workout.add_exercise(exercise)
+
+    # Log nutrition
+    print("\nLog nutrition:")
+    calories = int(input("Enter calories consumed: "))
+    protein = float(input("Enter protein intake (g): "))
+    carbs = float(input("Enter carbs intake (g): "))
+    fat = float(input("Enter fat intake (g): "))
+    nutrition = Nutrition(user, workout_date, calories, protein, carbs, fat)
+
+    # Log sleep
+    print("\nLog sleep:")
+    hours_slept = float(input("Enter hours slept: "))
+    sleep_quality = input("Enter sleep quality: ")
+    sleep_log = SleepLog(user, workout_date, hours_slept, sleep_quality)
+
+    # Display workout progress
     visualization = Visualization()
-
-    # Simulate app flow
-    exercise_instance = exercise  # Use the exercise instance you created above
-    workout.add_exercise(exercise_instance)
-
-    # Print workout details
-    print(workout)
-    print(f"Total workout duration: {workout.get_total_duration()} minutes")
-    print("Exercises performed:")
-    for exercise in workout.get_exercises():
-        print(f"- {exercise.name} ({exercise.duration_minutes} minutes)")
-
-    # ... continue with other simulations ...
+    visualization.plot_workout_progress(user.name, [workout])
 
 if __name__ == "__main__":
     main()
