@@ -40,7 +40,7 @@ FitBuddy is a comprehensive fitness tracker application designed to help you ach
 3. Run the application: `python main.py`
 
 Note: Make sure you have Python 3.8 and the required dependencies installed before running the application.
-'''
+```
 fitbuddy-fitness-tracker/
 ├── classes/
 │   ├── user.py
@@ -61,7 +61,7 @@ fitbuddy-fitness-tracker/
 ├── requirements.txt
 ├── README.md
 └── .gitignore
-'''
+```
 
 ## Contributing
 
