@@ -26,10 +26,12 @@ FitBuddy is a comprehensive fitness tracker application designed to help you ach
 - Python
 - Object-Oriented Programming (OOP)
 - Dash Framework
+- Matplotlib
+- Tkinter
 
 ## Environmental Dependencies
 
-- Python 3.x
+- Python 3.5 or later
 - Dash Framework: Install using `pip install dash`
 - Other dependencies: Install using `pip install -r requirements.txt`
 
