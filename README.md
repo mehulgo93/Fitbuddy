@@ -1,6 +1,7 @@
 <p align="center">
     <a href=""><img src="https://img.shields.io/pypi/l/ansicolortags.svg" /></a>
     <a href=""><img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" /></a>
+    <a href=""><img src="https://badgen.net/github/commits/mehulgo93/Fitbuddy" /></a>
     <br>
     <a href="https://docs.python.org/3/index.html"><img src="https://img.shields.io/badge/python-%2320232a?style=for-the-badge&logo=python&logoColor=ffdd54" /></a>
     <a href="https://dash-bootstrap-components.opensource.faculty.ai/"><img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" /></a>
