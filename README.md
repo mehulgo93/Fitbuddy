@@ -6,9 +6,8 @@
     <a href="https://dash-bootstrap-components.opensource.faculty.ai/"><img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" /></a>
     <a href="https://plotly.com/dash/"><img src="https://img.shields.io/badge/dash-008DE4?style=for-the-badge&logo=dash&logoColor=white" /></a>
     <br>
-    <a href=""><img src="https://img.shields.io/badge/Made%20with-Jupyter-orange?style=for-the-badge&logo=Jupyter" /></a>
-
 </p>
+<h1 align="center"><b>Fitbuddy: Your Very Own Fitness Tracker</b></h1>
 FitBuddy is a comprehensive fitness tracker application designed to help you achieve your health and wellness goals. With a user-friendly interface and powerful features, FitBuddy makes it easy to log and monitor your exercises, nutrition, sleep patterns, and more.
 
 ## Features
@@ -27,8 +26,6 @@ FitBuddy is a comprehensive fitness tracker application designed to help you ach
 - Python
 - Object-Oriented Programming (OOP)
 - Dash Framework
-- HTML, CSS
-- GitHub
 
 ## Environmental Dependencies
 
@@ -38,17 +35,33 @@ FitBuddy is a comprehensive fitness tracker application designed to help you ach
 
 ## Getting Started
 
-1. Clone the repository: `git clone https://github.com/your-username/fitbuddy.git`
+1. Clone the repository: `git clone https://github.com/mehulgo93/fitbuddy.git`
 2. Install required dependencies: `pip install -r requirements.txt`
 3. Run the application: `python main.py`
 
-Note: Make sure you have Python 3.x and the required dependencies installed before running the application.
+Note: Make sure you have Python 3.8 and the required dependencies installed before running the application.
 
-## Screenshots
+fitbuddy-fitness-tracker/
+├── classes/
+│   ├── user.py
+│   ├── exercise.py
+│   ├── workout.py
+|   ├── main.py
+│   ├── nutrition.py
+│   ├── sleeplog.py
+│   └── visualization.py
+├── tests/
+│   ├── __init__.py
+│   ├── test_user.py
+│   ├── test_exercise.py
+│   ├── test_workout.py
+│   ├── test_nutrition.py
+│   ├── test_sleeplog.py
+│   └── test_visualization.py
+├── requirements.txt
+├── README.md
+└── .gitignore
 
-![Dashboard](/path/to/dashboard-screenshot.png)
-![Workout Log](/path/to/workout-log-screenshot.png)
-![Nutrition Log](/path/to/nutrition-log-screenshot.png)
 
 ## Contributing
 
@@ -62,5 +75,5 @@ We welcome contributions from the community! If you'd like to contribute, please
 
 
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
