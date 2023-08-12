@@ -50,15 +50,13 @@ Fitbuddy-fitness-tracker/
 |   ├── main.py
 │   ├── nutrition.py
 │   ├── sleeplog.py
-│   └── visualization.py
-├── tests/
-│   ├── __init__.py
-│   ├── test_user.py
-│   ├── test_exercise.py
-│   ├── test_workout.py
-│   ├── test_nutrition.py
-│   ├── test_sleeplog.py
-│   └── test_visualization.py
+│   ├── visualization.py
+│   ├── user_test.py
+│   ├── exercise_test.py
+│   ├── workout_test.py
+│   ├── nutrition_test.py
+│   ├── sleeplog_test.py
+│   └── visualization_test.py
 ├── requirements.txt
 ├── README.md
 └── .gitignore
